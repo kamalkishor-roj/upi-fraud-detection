@@ -3,8 +3,7 @@
 A machine learning system that detects fraudulent UPI transactions 
 in real time using anomaly detection and supervised learning.
 
-**Live Demo →** [Add your Streamlit URL here after deployment]
-
+**Live Demo →** (https://upi-fraud-detection-n7dxwhzuyyh893yj9phm87.streamlit.app/)
 ---
 
 ## 🎯 Problem Statement
