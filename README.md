@@ -77,3 +77,47 @@ features only and is intended as a demonstration.
 
 ## 🚀 How to Run Locally
 ```bash
+# Clone the repo
+git clone https://github.com/YOURUSERNAME/upi-fraud-detection.git
+cd upi-fraud-detection
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run dashboard
+python -m streamlit run app.py
+```
+
+---
+
+## 📁 Project Structure
+```
+upi-fraud-detection/
+├── app.py                                  # Streamlit dashboard
+├── fraud_results.csv                       # Pre-scored transaction results
+├── fraud_model.pkl                         # Trained Random Forest model
+├── scaler.pkl                              # Fitted StandardScaler
+├── UPI Trasaction Fraud Detection.ipynb    # jupyter notebook
+├── requirements.txt                        # Dependencies
+└── README.md                               # You are here
+```
+
+---
+
+## 💡 Key Learnings
+
+- Class imbalance (0.17% fraud) is the #1 challenge in fraud detection
+- SMOTE must be applied after train/test split to avoid data leakage
+- Recall matters more than precision in fraud detection — 
+  missing fraud is costlier than a false alarm
+- Threshold tuning (0.3 vs 0.5) is a business decision, not technical
+
+---
+
+## 🔮 Future Improvements
+
+- [ ] Add real UPI transaction features (merchant, device, location)
+- [ ] Implement XGBoost for better performance
+- [ ] Add time-series analysis of spending patterns
+- [ ] Build user-level behavioral baseline model
+- [ ] Add explainability using SHAP values
