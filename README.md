@@ -1,4 +1,4 @@
-# 🔍 UPI Transaction Fraud Detection
+# 🔍 Payment Fraud Detection System 
 
 A machine learning system that detects fraudulent UPI transactions 
 in real time using anomaly detection and supervised learning.
